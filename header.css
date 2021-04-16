@@ -1,0 +1,83 @@
+.flexheader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 375px;
+    background-color: #92b8b7;
+    color: white;
+}
+label {
+    align-self: center;
+    cursor: pointer;
+    padding: 0 15px 0 0;
+}
+i.fas.fa-bars::before{
+    font-size: 35px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    display: block;
+}
+
+.nav {
+    display: none;
+    flex-basis: 100%;
+}
+.logoheader {
+    padding: 7px;
+
+}
+.nav__li {
+    border: 1px solid white;
+    text-align: center;
+    padding: 23px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.nav__ul {
+    background-color:#707070;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body > header > nav > ul > li:nth-child(1) > a,
+body > header > nav > ul > li:nth-child(2) > a, 
+body > header > nav > ul > li:nth-child(3) > a, 
+body > header > nav > ul > li:nth-child(4) > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media(min-width: 376px) {
+    .logoheader{
+        padding: 17px 7px 17px 176px;
+    }
+    .nav {
+        display: block;
+        flex: 1;
+    }
+    .nav__ul {
+        display: flex;
+        background-color: #92b8b7;
+        text-decoration: underline;
+
+    }
+    label {
+        display: none;
+    }
+    .nav__li{
+       border: none;
+       padding: 40px 0px 23px 23px;
+    }
+    
+}

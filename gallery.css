@@ -1,0 +1,20 @@
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4 , 1fr);
+    column-gap: 10px;                          
+    row-gap: 15px;
+    margin: 20px 10px;
+}
+.gallery__items{
+    max-width: 110px;
+}
+
+@media(min-width: 376px){
+    .gallery__items{
+        max-width: 221px;
+    }
+    .gallery{
+        margin: 50px 176px;
+    }
+}

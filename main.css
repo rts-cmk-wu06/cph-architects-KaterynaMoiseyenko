@@ -1,0 +1,40 @@
+.main{
+    margin: 16px;
+}
+.main__h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin: 0 0 14px 0;
+}
+.main__article{
+    min-width: 343px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 24px 0;
+}
+.article-text{
+    background: #bcdfde;
+}
+.main__img{
+    max-width: 120px;
+}
+
+.article__p, .main__h2{
+   margin: 15px 0 15px 15px;
+}
+
+
+@media(min-width: 376px){
+    .main{
+        max-width: 672px;
+        margin: 0 176px;
+    }
+    .main__h1{
+        margin: 14px 0;
+
+    }
+    .main__img{
+        max-width: 184px;
+    }
+}

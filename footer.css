@@ -1,0 +1,22 @@
+.footer{
+    background-color: #707070;
+    color: #fefefe;
+}
+.footer_template {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footernav{
+    padding: 20px 0 0 0;
+}
+.footernav a{
+    margin: 2px;
+}
+
+.copyright__p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
